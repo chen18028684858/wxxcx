@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/epidemic/epidemic",
+        "pages/auth/auth",
+        "pages/my/my",
+        "pages/detail/detail",
+        "pages/diagram/diagram",
+        "pages/bills/bills",
+        "pages/mybills/mybills"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#8a6af5",
+        "navigationBarTitleText": "日日账单",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#8a6af5",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "./icons/home.png",
+                "selectedIconPath": "./icons/home-active.png"
+            },
+            {
+                "pagePath": "pages/bills/bills",
+                "text": "账单",
+                "iconPath": "./icons/bills.png",
+                "selectedIconPath": "./icons/bills-active.png"
+            },
+            {
+                "pagePath": "pages/diagram/diagram",
+                "text": "统计",
+                "iconPath": "./icons/diagram.png",
+                "selectedIconPath": "./icons/diagram-active.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "./icons/my.png",
+                "selectedIconPath": "./icons/my-active.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

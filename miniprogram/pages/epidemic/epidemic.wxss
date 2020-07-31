@@ -1,0 +1,26 @@
+.list{
+    padding: 20rpx;
+    background-color: #fff;
+}
+.list_item{
+    width: calc(50% - 1rpx);
+    padding: 20rpx 0;
+
+    border-bottom: 1rpx solid #eee;
+}
+.list_item:nth-child(2n+1){
+    border-right: 1rpx solid #eee;
+}
+
+.item_img{
+    width: 96rpx;
+    height: 96rpx;
+    margin: 0 auto;
+}
+.epi_img{
+    height: 96rpx;
+}
+.epi_desc{
+    margin-top: 20rpx;
+    text-align: center;
+}

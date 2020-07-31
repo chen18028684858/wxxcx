@@ -1,0 +1,18 @@
+page{
+  background-color: #eee;
+}
+.auto_img{
+  width: 100%;
+  display: block;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}

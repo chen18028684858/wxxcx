@@ -1,0 +1,11 @@
+<view   class="epidemic">
+    <view class="list clearfix">
+        <view class="list_item fl" wx:for="{{epiData}}" wx:key="index">
+            <view class=" item_img" style="background-color:{{item.bgColor}}">
+                <image class="auto_img epi_img" mode="widthFix" src="../../icons/people.png"></image>
+            </view>
+            <view class="epi_desc" style="color:{{item.bgColor}}">{{item.title}}:</view>
+            <view class="epi_desc" style="color:{{item.bgColor}}">{{item.num}}</view>
+        </view>
+    </view>
+</view>

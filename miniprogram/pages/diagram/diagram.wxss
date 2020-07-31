@@ -1,0 +1,170 @@
+.diagram_top {
+    padding: 20rpx;
+    background-color: #8a6af5;
+}
+
+.input_box {
+    width: calc(100% - 230rpx);
+    margin-right: 20rpx;
+    height: 60rpx;
+    border-radius: 30rpx;
+    background-color: #fff;
+    font-size: 28rpx;
+    padding: 0 30rpx;
+    color: #888;
+}
+
+.picker_box {
+    height: 60rpx;
+    line-height: 60rpx;
+}
+
+.condition {
+    height: 60rpx;
+    width: 150rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: #888;
+}
+
+.title_item {
+    background-color: #fff;
+    padding: 20rpx 0;
+}
+
+.title_type {
+    width: 50%;
+    height: 106rpx;
+    position: relative;
+}
+
+.c_item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28rpx;
+    padding: 10rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    font-weight: 700;
+    border: 3rpx solid transparent;
+}
+
+.c_item.shouru {
+    border-color: red;
+}
+
+.c_item.zhichu {
+    border-color: lightgreen;
+}
+
+.title_name,
+title_money {
+    height: 40rpx;
+}
+
+.title_money.shouru {
+    color: red;
+}
+
+.title_money.zhichu {
+    color: lightgreen;
+}
+
+.pie_box {
+    height: 640rpx;
+    background-color: #fff;
+    margin-top: 20rpx;
+}
+
+.type_box {
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.type_item {
+    padding: 20rpx;
+    background-color: #fff;
+}
+
+.type_item:not(:last-child) {
+    border-bottom: 1rpx solid #e8e8e8;
+}
+
+.t_icon {
+    width: 80rpx;
+    height: 80rpx;
+    background-color: #e8e8e8;
+    border-radius: 50%;
+}
+
+.t_arrow {
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 20rpx;
+}
+
+.t_item {
+    width: calc(100% - 160rpx);
+    margin: 0 20rpx;
+}
+
+.ty_item {
+    height: 40rpx;
+    line-height: 40rpx;
+}
+
+.ty_item_text {
+    font-size: 28rpx;
+}
+
+.type_item_shouru {
+    font-size: 28rpx;
+    color: #e4393c;
+    font-weight: bold;
+}
+.type_item_zhichu {
+    font-size: 28rpx;
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.count {
+    color: #666;
+    font-size: 24rpx;
+    line-height: 40rpx;
+    width: 100rpx;
+    text-align: right;
+}
+
+.progress {
+    width: calc(100% - 100rpx);
+    height: 20rpx;
+    margin-top: 10rpx;
+    background-color: #e8e8e8;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+
+.active_progress {
+    height: 100%;
+    width: 0;
+    transition: width .3s linear, background-color .3s linear;
+
+}
+
+.t_icon_img {
+    height: 80rpx;
+}
+
+.t_arrow_img {
+    height: 40rpx;
+}
+.canvas{
+    height: 620rpx;
+    padding-bottom: 20rpx;
+}

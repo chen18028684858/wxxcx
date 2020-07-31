@@ -1,0 +1,54 @@
+.content_bottom{
+    padding-top: 10rpx;
+    overflow: hidden;
+    background-color: #fff;
+
+}
+.content_item{
+    padding: 20rpx;
+}
+.content_icon{
+    width: 96rpx;
+    height: 96rpx;
+    border-radius: 50%;
+    /* background-color: #ccc; */
+    margin-right: 20rpx;
+}
+.content_info{
+    width: calc(100% - 116rpx);
+    height: 96rpx;
+    border-bottom: 1px solid #e8e8e8;
+}
+.content_list{
+    width: 50%;
+    height: 100%;
+}
+.top_text{
+    height: 50%;
+    line-height: 48rpx;
+}
+.commit{
+    height: 50%;
+    line-height: 48rpx;
+}
+.mr{
+    margin-right: 20rpx;
+}
+.setColor{
+    color: #777777;
+}
+.no_commit{
+    height: 100%;
+    line-height: 96rpx;
+}
+.content_list_money{
+    height: 100%;
+    line-height: 96rpx;
+}
+.shouru{
+    color: #e4393c;
+  }
+  
+  .zhichu{
+    color: #00B26A;
+  }

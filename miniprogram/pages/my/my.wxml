@@ -1,0 +1,21 @@
+<view class="my">
+	<view class="my_bg">
+		<view class="my_img">
+			 <image class="auto_img my-img-box" src="{{userInfo.userImg}}" mode="widthFix"></image>
+		</view>
+		<view class="nickname">{{userInfo.nickname}}</view>
+	</view>
+
+	<view class="list">
+
+		<view class="list_item clearfix" wx:for="{{listData}}" wx:key="index" data-url="{{item.url}}" bindtap="goPage">
+			<view class="fl title">{{item.title}}</view>
+			<view class="fr arrow">
+				<image class="auto_img arrow-img" src="../../icons/right-arrow.png" mode="widthFix"></image>
+			</view>
+		</view>
+
+	</view>
+
+
+</view>

@@ -1,0 +1,50 @@
+.my_bg{
+    background-color: #8a6af5;
+    padding: 80rpx 0;
+  }
+  
+  .my_img{
+    width: 160rpx;
+    height: 160rpx;
+    background-color: #fff;
+    box-shadow: 0 0 0 10rpx rgba(255, 255, 255, .5);
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .my-img-box{
+    height: 160rpx;
+  }
+  
+  .nickname{
+    font-size: 32rpx;
+    text-align: center;
+    margin-top: 40rpx;
+    color: #fff;
+  }
+  
+  .list{
+    background-color: #fff;
+  }
+  
+  .list_item{
+    padding: 20rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+  }
+  
+  .list_item:not(:last-child){
+    border-bottom: 1rpx solid #e8e8e8;
+  }
+  
+  .arrow{
+    width: 28rpx;
+    height: 28rpx;
+    margin-top: 27rpx;
+  }
+  
+  .arrow-img{
+    height: 28rpx;
+  }

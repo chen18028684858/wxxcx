@@ -1,0 +1,23 @@
+<view class="content_bottom">
+
+	<view class="clearfix content_item" wx:for="{{billsData}}" wx:key="index">
+		<view class="fl content_icon">
+			<image class="auto_img list-icon-img" src="{{item.billsType.url}}" mode="widthFix"></image>
+		</view>
+		<view class="fl content_info clearfix">
+			<view class="fl content_list">
+				<view class="clearfix {{item.userBills.comment == '' ? 'no_commit' : 'top_text'}} ">
+					<view class="fl mr">{{item.billsType.title}}</view>
+					<view class="fl setColor">{{item.accountType}}</view>
+				</view>
+				<view class="commit setColor" wx:if="{{item.userBills.comment !=''}}">{{item.userBills.comment}}</view>
+			</view>
+			<view class="fr content_list_money ">
+                <view class="fl {{item.costType.type}}">￥{{item.userBills.money}}</view>
+                <view class="fl delete" data-id="{{item._id}}" data-index="{{index}}" bindtap="deleteBillsData">
+                    <image class="auto_img delete_img" src="../../icons/delete.png" mode="widthFix"></image>
+                </view>
+            </view>
+		</view>
+	</view>
+</view>

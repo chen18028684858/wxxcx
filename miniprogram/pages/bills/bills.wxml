@@ -1,0 +1,72 @@
+<view class="bills">
+	<view class="billss_bg"></view>
+	<view class="bills_box">
+
+		<view class="bills_item">
+
+			<view class="bills_top">
+				<view class="top_box clearfix">
+					<view class="fl top_item {{item.isActive ? 'active' : ''}}" wx:for="{{topTypeData}}" wx:key="index" data-index="{{index}}" data-active="{{item.isActive}}" data-key="topTypeData" bindtap="changeTag" >{{item.title}}</view>
+					
+				</view>
+			</view>
+
+			<view class="bills_icons">
+
+				<view class="icons_box clearfix">
+					<view class="icons_item fl" wx:for="{{iconsData}}" wx:key="index" data-index="{{index}}" data-active="{{item.isActive}}" data-key="iconsData" bindtap="changeTag">
+						<view class="icons_ele {{item.isActive ? 'active' : ''}}">
+							<view class="icons_img ">
+								<image class="auto_img icons-img-box" mode="widthFix" src="{{item.url}}"></image>
+							</view>
+							<view class="icons_text">{{item.name}}</view>
+						</view>
+						
+					</view>
+					
+				</view>
+				
+			</view>
+		</view>
+
+		<view class="bills_types">
+			<view class="types_title">账户选择</view>
+			<view class="clearfix types_select">
+				<view class="fl types_items {{item.isActive ? 'active' : ''}}" wx:for="{{accountData}}" wx:key="index" data-index="{{index}}" data-key="accountData" data-active="{{item.isActive}}" bindtap="changeTag">{{item.title}}</view>
+				
+			</view>
+		</view>
+
+		<view class="bills_info">
+
+			<view class="bills_info_item clearfix">
+				<view class="fl info_item_title">日期</view>
+				<view class="fl bills_date">
+					<picker class="picker-box" bindchange="userBillsInfo"  data-key="date" mode="date" start="1980-01-01" end="{{dateRange.end}}">
+						{{billsInfo.date}}
+					</picker>
+				</view>
+			</view>
+
+			<view class="bills_info_item clearfix">
+				<view class="fl info_item_title">金额</view>
+				<view class="fl bills_date">
+					<input class="weui-input" bindchange="userBillsInfo"  data-key="money" type="digit" placeholder="输入金额" />
+				</view>
+			</view>
+
+			<view class="bills_info_item clearfix">
+				<view class="fl info_item_title">备注</view>
+				<view class="fl bills_date">
+					<input class="weui-input" bindchange="userBillsInfo"  data-key="comment" placeholder="输入备注" maxlength="20" />
+				</view>
+			</view>
+
+		</view>
+
+		<view class="bills_btn" bindtap="save">
+			保存
+		</view>
+
+	</view>
+</view>

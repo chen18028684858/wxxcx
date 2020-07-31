@@ -1,0 +1,63 @@
+<view class="diagram">
+
+	<!-- 搜索栏 -->
+	<view class="diagram_top clearfix">
+		<view class="fl input_box">
+			<picker class="picker_box" mode="date" start="{{date.start}}" end="{{date.end}}" bindchange="selectDate">{{currentDate}}</picker>
+		</view>
+		<view class="fl condition" bindtap="changeDateType">按{{dateType.titles[dateType.default]}}查询</view>
+	</view>
+
+	<view class="diagram_content">
+
+		<!-- 收入/支出栏 -->
+		<view class="clearfix title_item">
+
+			<view class="fl title_type" wx:for="{{titleData}}" wx:key="index" data-index="{{index}}" data-active="{{item.isActive}}" bindtap="changeTitle">
+				<view class="c_item {{item.isActive ? item.type : ''}}">
+					<view class="title_name">{{dateType.titles[dateType.default]}}{{item.title}}</view>
+					<view class="title_money {{item.type}}">￥{{item.total}}</view>
+				</view>
+			</view>
+			
+
+		</view>
+
+
+		<!-- 饼图 -->
+		<view class="pie_box" hidden="{{typesData[currentType].length == 0}}">
+			<canvas style="width: {{canvasWidth + 'px'}};" class="canvas" canvas-id="pieCanvas"></canvas>
+
+		</view>
+
+		<view class="type_box">
+
+			<view class="type_item clearfix" wx:for="{{typesData[currentType]}}" wx:key="index" data-ids="{{item.ids}}" data-title="{{item.title}}" data-costtitle="{{item.costTitle}}" bindtap="viewDetail">
+				<view class="fl t_icon">
+					<image class="auto_img t_icon_img" src="{{item.url}}" mode="widthFix"></image>
+				</view>
+				<view class="fl t_item">
+					<view class="ty_item">
+						<view class="fl ty_item_text">{{item.title}}</view>
+						<view class="fr type_item_shouru">￥{{item.total}}</view>
+					</view>
+					<view class="ty_item">
+						<view class="fl progress">
+							<view class="active_progress" style="width: {{item.percent}};background-color: {{item.color}};"></view>
+						</view>
+						<view class="fr count">{{item.count}}笔</view>
+					</view>
+				</view>
+				<view class="fl t_arrow">
+					<image class="auto_img t_arrow_img" src="../../icons/right-arrow.png" mode="widthFix"></image>
+				</view>
+			</view>
+
+           
+
+		</view>
+
+        
+
+	</view>
+</view>
